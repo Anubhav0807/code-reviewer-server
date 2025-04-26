@@ -30,6 +30,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+// ✅ Send the prompt and file contents to AI and get the respone
 router.post("/prompt_ai", async (req, res) => {
   try {
     const { title, content, language, prompt } = req.body;
